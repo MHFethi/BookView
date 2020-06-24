@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">BookView</string>
+
+    <!-- LINK  -->
+    <string name="lkPasswordForgot">J\'ai oublié mon mot de passe</string>
+    <string name="lkNewAccount">"Pas de compte ? Par ici "</string>
+    <string name="lkConnexion">J\'ai déja un compte</string>
+    <string name="txtCGU">En cliquant sur Créer, vous acceptez les Conditions d’utilisation et la Politique de confidentialité de Book View</string>
+
+
+    <!-- LABEL  -->
+    <string name="lbLogin">Login</string>
+    <string name="lbPassword">Mot de passe</string>
+
+
+    <!-- BUTTON  -->
+    <string name="btn_Subscribe">Créer mon compte</string>
+    <string name="lbUpdate">modifier mon compte</string>
+    <string name="lbDelete">Supprimer mon compte</string>
+    <string name="top_navigation_menu">Deconnexion</string>
+
+
+    <!-- TEXT FIELD  -->
+    <string name="tfMail">E-mail</string>
+    <string name="tfPWConfirmSubscribe">Confirmation de mot de passe</string>
+    <string name="tfSearchBar">Rechercher un livre</string>
+
+
+    <!-- Title ACTIVITY/FRAGMENT -->
+    <string name="lbConnexion">Connexion</string>
+    <string name="TitleSubsribe">Créer votre compte et \n commencer à lire</string>
+    <string name="titleHome">Home</string>
+    <string name="titleAccount">Mon compte</string>
+    <string name="titleResearch">Rechercher</string>
+    <string name="titleMyLibrary">Ma bibliothèque</string>
+    <string name="titleDetails">Description</string>
+
+
+    <!-- BOTTOM NAVIGATION VIEW -->
+    <string name="bottom_navigation_menu_home">Home</string>
+    <string name="bottom_navigation_menu_library">Ma Bibliotheque</string>
+    <string name="bottom_navigation_menu_research">Rechercher</string>
+    <string name="bottom_navigation_menu_account">Mon Compte</string>
+    <string name="lb_btn_detail">Voir détails</string>
+
+
+    <!-- Recycler NAVIGATION VIEW -->
+    <string name="thumbnail">Image</string>
+    <string name="title">Test recycler</string>
+    <string name="category">Genre</string>
+    <string name="price">Prix</string>
+    <string name="author">Auteur</string>
+    <string name="NO_RESULT">Aucun resultats</string>
+    <string name="Failed_to_Load_data">Please check your Internet Connection</string>
+    <string name="lbResume">Résumé</string>
+    <string name="lbDetails">Détails</string>
+
+    <!-- Label DETAILS VIEW -->
+    <string name="lbDate">Date de parution</string>
+    <string name="lbGenre">Genre</string>
+    <string name="lbLangue">Langues</string>
+    <string name="lbNbPage">Nombre de pages</string>
+    <string name="lbIsbn">ISBN</string>
+    <string name="lbStatue">Non Lue</string>
+
+    <string name="lbMarkLue">Marquer comme Lue</string>
+    <string name="lbMarkNonLue">Marquer comme Non lue</string>
+    <string name="lbdeleteBook">Supprimer</string>
+    <string name="lbCancel">Annuler</string>
+
+
+
+
+
+</resources>

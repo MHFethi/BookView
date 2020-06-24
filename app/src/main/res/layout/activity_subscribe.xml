@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hf.app.bookview.SubscribeActivity">
+
+    <TextView
+        android:id="@+id/lkConnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/avenir_lts_td_book"
+        android:text="@string/lkConnexion"
+        android:textColor="@color/colorGray"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/messageErrorSubscribe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tfPWConfirmSubscribe" />
+
+    <Button
+        android:id="@+id/btn_subscribe"
+        android:layout_width="271dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/avenir_lts_td_roman"
+        android:text="@string/btn_Subscribe"
+        android:textColor="@color/colorPureWhite"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcgu" />
+
+    <EditText
+        android:id="@+id/tfPasswordSubscribe"
+        android:layout_width="266dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="@font/avenir_lts_td_book"
+        android:hint="@string/lbPassword"
+        android:inputType="textPersonName|textPassword"
+        android:textColor="@color/colorGray"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tfMailSubscribe" />
+
+    <EditText
+        android:id="@+id/tfPWConfirmSubscribe"
+        android:layout_width="266dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="@font/avenir_lts_td_book"
+        android:hint="@string/tfPWConfirmSubscribe"
+        android:inputType="textPersonName|textPassword"
+        android:textColor="@color/colorGray"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tfPasswordSubscribe" />
+
+    <EditText
+        android:id="@+id/tfLoginSubscribe"
+        android:layout_width="266dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:fontFamily="@font/avenir_lts_td_book"
+        android:hint="@string/lbLogin"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorGray"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleSubscribe" />
+
+    <EditText
+        android:id="@+id/tfMailSubscribe"
+        android:layout_width="266dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="@font/avenir_lts_td_book"
+        android:hint="@string/tfMail"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorGray"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tfLoginSubscribe" />
+
+    <TextView
+        android:id="@+id/titleSubscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/avenir_lts_td_roman"
+        android:text="@string/TitleSubsribe"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/tfLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtcgu"
+        android:layout_width="257dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtCGU"
+        android:textAlignment="center"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_subscribe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageErrorSubscribe" />
+
+    <TextView
+        android:id="@+id/messageErrorSubscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_error"
+        app:layout_constraintBottom_toTopOf="@+id/txtcgu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lkConnexion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

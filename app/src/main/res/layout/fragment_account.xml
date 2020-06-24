@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titleHome"
+            android:layout_width="323dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/line"
+            android:fontFamily="@font/avenir_lts_td_roman"
+            android:text="@string/titleAccount"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="313dp"
+            android:layout_height="182dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleHome"
+            app:layout_constraintVertical_bias="0.321">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:background="@drawable/line_account_frag_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbDateDetails"
+                    android:layout_width="133dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lbLogin"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/dateParutionDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/none_line"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:background="@drawable/line_account_frag_bet"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbMailAccount"
+                    android:layout_width="138dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tfMail"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/tfMailAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/none_line"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="@drawable/line_account_frag_bot"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbPasswordAccount"
+                    android:layout_width="141dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lbPassword"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/tfPasswordAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/none_line"
+                    android:ems="10"
+                    android:inputType="textPersonName|textPassword"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_update_account"
+            android:layout_width="271dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/avenir_lts_td_roman"
+            android:text="@string/lbUpdate"
+            android:textColor="@color/colorPureWhite"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/message_update_frag"
+            app:layout_constraintVertical_bias="0.125" />
+
+        <Button
+            android:id="@+id/btn_delete_account"
+            android:layout_width="271dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_bg_delete"
+            android:fontFamily="@font/avenir_lts_td_roman"
+            android:text="@string/lbDelete"
+            android:textColor="@color/colorPureWhite"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_update_account"
+            app:layout_constraintVertical_bias="0.213" />
+
+        <TextView
+            android:id="@+id/message_update_frag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/btn_deconnexion"
+            android:layout_width="28dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/ic_deconnexion"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<TextView
+    android:id="@+id/titleHome"
+    android:layout_width="323dp"
+    android:layout_height="49dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="15dp"
+
+    android:background="@drawable/line"
+    android:fontFamily="@font/avenir_lts_td_roman"
+    android:text="@string/titleHome"
+    android:textAlignment="textStart"
+    android:textColor="@android:color/background_dark"
+    android:textSize="24sp"
+    android:textStyle="normal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0"
+    app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>
+
+
+
+
+
+
+
